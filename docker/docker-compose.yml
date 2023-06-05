@@ -1,0 +1,8 @@
+version: '4.20'
+
+services:
+  aws-project:
+    image: rossyfranca/aws-project:v2
+    container_name: aws-project-prod
+    ports:
+      - "8099:80"
