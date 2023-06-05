@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+Docker Commands
+
+docker build -t rossyfranca/aws-project:v1 .
+
+docker push rossyfranca/aws-project:v1
+
+docker tag aws-project:v1 rossyfranca/aws-project:v1 
+
+docker run -d --name aws-project1 -p 8099:80 rossyfranca/aws-project:v1
